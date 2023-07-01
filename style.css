@@ -1,0 +1,48 @@
+/* Body */
+
+body {
+    background-color:indigo; 
+}
+
+/* Contenedor Padre */
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: row;*/
+   /*flex-direction: column;*/
+   /* align-items: flex-end;*/
+   /* flex-direction: column-reverse;*/
+   justify-content: space-evenly;
+   }
+
+/* Contenedor Hijo */
+
+.Productos {
+    width: 100px;
+    height: 100px;
+    background-color:chocolate;
+    margin: 10px;
+    font-size: 30px;
+}
+
+/* Medias Query */
+
+/*Container Padre */
+
+@media (min-width: 501px){
+    .container{
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        /*justify-content: center;*/
+        margin: auto;
+    }
+
+    .box{
+        width: 200px;
+        height: auto;
+    }
+}
+   
